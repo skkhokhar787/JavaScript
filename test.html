@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body><!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Contact Form</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f5f6fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .contact-form {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 450px;
+    }
+
+    .contact-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea,
+    .contact-form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .contact-form textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .form-group-inline {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+
+    .form-group-inline input[type="checkbox"],
+    .form-group-inline input[type="radio"] {
+      margin-right: 10px;
+    }
+
+    .contact-form button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #45a049;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <form class="contact-form">
+    <h2>Contact Us</h2>
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+
+
+    <div class="form-group-inline">
+      <input type="checkbox" id="subscribe" name="subscribe">
+      <label for="subscribe">Subscribe to newsletter</label>
+    </div>
+    <div class="form-group-inline">
+      <input type="checkbox" id="terms" name="terms" required>
+      <label for="terms">I accept Terms & Conditions</label>
+    </div>
+
+
+    <p style="margin-bottom:5px; font-weight:bold; color:#555;">Gender</p>
+    <div class="form-group-inline">
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+    </div>
+    <div class="form-group-inline">
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+    </div>
+
+
+    <label for="country">Country</label>
+    <select id="country" name="country" required>
+      <option value="">Select your country</option>
+      <option value="pakistan">Pakistan</option>
+      <option value="india">India</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+    </select>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+</body>
+
+</html>
+  
+</html>
