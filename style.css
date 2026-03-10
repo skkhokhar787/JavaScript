@@ -1,7 +1,9 @@
-div{
-    height: 100px;
-    width: 100px;
+.dark {
+    background-color: black;
     color: white;
-    background-color: dodgerblue;
-    border: 1px solid black;
+}
+
+.light {
+    background-color: white;
+    color: black;
 }
