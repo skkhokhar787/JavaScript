@@ -54,13 +54,16 @@ body {
     border-radius: 1rem;
 }
 
-p {
+#msg{
     color: bisque;
-    font-size: 8vmin;
+    font-size: 5vmin;
 }
 
 .msg-container{
     align-items: center;
-    margin-top: 15vmin;   
+    height: 30vmin;   
 }
 
+.hide{
+    display: none;
+}
